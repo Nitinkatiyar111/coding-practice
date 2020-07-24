@@ -1,0 +1,20 @@
+
+ // Algorithm
+   
+   mergeSort(A, lb,ub)
+   {
+      if(lb < ub)
+      {
+        mid = (lb + ub)/2;
+       
+   // recursive call
+
+    mergeSort(A,lb,mid);
+    mergeSort(A,mid+1,ub);
+     
+  // for merging
+ 
+    merge(A,lb,mid,ub);
+
+}
+} 
